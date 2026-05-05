@@ -3,57 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NESTIFY - Home Automation System</title>
+    <title>NESTIFY Home Automation System</title>
     <style>
         body {
-            background: linear-gradient(135deg, #89f7fe, #66a6ff);
-            color: #333;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f0f0f0, #d6d6d6);
             margin: 0;
-            padding: 20px;
-            text-align: center;
+            padding: 0;
+            overflow: hidden;
         }
         h1 {
-            font-size: 3em;
-            animation: rotate 10s linear infinite;
-        }
-        p {
-            font-size: 1.2em;
-            transition: transform 0.3s;
-        }
-        p:hover {
-            transform: scale(1.1);
+            color: #4A90E2;
+            text-align: center;
+            animation: rotate 10s infinite linear;
         }
         @keyframes rotate {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .hover-effect {
+            transition: transform 0.3s;
+        }
+        .hover-effect:hover {
+            transform: scale(1.1);
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        .button {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #357ABD;
+        }
     </style>
 </head>
 <body>
-    <h1>NESTIFY Home Automation System</h1>
-    <p>Welcome to the NESTIFY project! Experience the future of home automation.</p>
-    <button onclick="toggleDetails()">See Project Details</button>
-    <div id="details" style="display: none;">
-        <h2>About NESTIFY</h2>
-        <p>NESTIFY is your go-to solution for a smarter home. Our home automation system allows you to control devices remotely and manage your home's energy with ease.</p>
-        <h3>Key Features:</h3>
+    <div class="content">
+        <h1 class="hover-effect">NESTIFY Home Automation System</h1>
+        <p>This project is built with a technology stack of:</p>
         <ul>
-            <li>Remote Device Control</li>
-            <li>Energy Management</li>
-            <li>Integrated Security Features</li>
-            <li>User-Friendly Interface</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
         </ul>
+        <h2>API Routes</h2>
+        <p>List of API routes will be here.</p>
+        <h2>Setup Instructions</h2>
+        <p>Instructions on how to set up the project will be provided here.</p>
+        <h2>Contributing Guidelines</h2>
+        <p>Guidelines for contributing to the project will be outlined here.</p>
+        <button class="button">Learn More</button>
     </div>
-    <script>
-        function toggleDetails() {
-            var details = document.getElementById('details');
-            if (details.style.display === "none") {
-                details.style.display = "block";
-            } else {
-                details.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
