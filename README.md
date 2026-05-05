@@ -1,6 +1,6 @@
 # Nestify 🌟
 
-![Animated Logo](https://your-animation-url.gif) <!-- Placeholder for animated logo or image -->
+<!-- Placeholder for animated logo or image -->
 
 ## Project Overview
 Nestify is an innovative project aimed at simplifying the process of managing and enhancing your nest (home or office). Whether it's for managing tasks, scheduling events, or controlling smart devices, Nestify brings a modern touch to your space.
