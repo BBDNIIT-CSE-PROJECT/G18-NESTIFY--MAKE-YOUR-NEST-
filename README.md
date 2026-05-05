@@ -1,66 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NESTIFY Home Automation System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #f0f0f0, #d6d6d6);
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        h1 {
-            color: #4A90E2;
-            text-align: center;
-            animation: rotate 10s infinite linear;
-        }
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .hover-effect {
-            transition: transform 0.3s;
-        }
-        .hover-effect:hover {
-            transform: scale(1.1);
-        }
-        .content {
-            text-align: center;
-            padding: 50px;
-        }
-        .button {
-            background-color: #4A90E2;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #357ABD;
-        }
-    </style>
-</head>
-<body>
-    <div class="content">
-        <h1 class="hover-effect">NESTIFY Home Automation System</h1>
-        <p>This project is built with a technology stack of:</p>
-        <ul>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-        </ul>
-        <h2>API Routes</h2>
-        <p>List of API routes will be here.</p>
-        <h2>Setup Instructions</h2>
-        <p>Instructions on how to set up the project will be provided here.</p>
-        <h2>Contributing Guidelines</h2>
-        <p>Guidelines for contributing to the project will be outlined here.</p>
-        <button class="button">Learn More</button>
-    </div>
-</body>
-</html>
+# Nestify 🌟
+
+![Animated Logo](https://your-animation-url.gif) <!-- Placeholder for animated logo or image -->
+
+## Project Overview
+Nestify is an innovative project aimed at simplifying the process of managing and enhancing your nest (home or office). Whether it's for managing tasks, scheduling events, or controlling smart devices, Nestify brings a modern touch to your space.
+
+## Features
+- **User-friendly Interface**: Enjoy a seamless experience with a modern UI.
+- **Task Management**: Organize tasks efficiently.
+- **Smart Integration**: Connect and control smart devices easily.
+- **Real-time Notifications**: Stay updated with instant notifications.
+- **Customizable Dashboard**: Tailor your dashboard to meet your needs.
+
+## Routes
+| Method | Route             | Description                      |
+|--------|------------------|----------------------------------|
+| GET    | /api/tasks       | Fetch all tasks                 |
+| POST   | /api/tasks       | Create a new task               |
+| GET    | /api/users       | Fetch user details               |
+| POST   | /api/login       | User login                       |
+
+## Installation Instructions
+To install Nestify, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BBDNIIT-CSE-PROJECT/G18-NESTIFY--MAKE-YOUR-NEST-.git
