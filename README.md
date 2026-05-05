@@ -1,38 +1,59 @@
-# G18 NESTIFY - MAKE YOUR NEST
-
-![Animated README](https://media.giphy.com/media/3oKIPs2q94HXLgE93a/giphy.gif)
-
-## Project Information
-G18 NESTIFY is a web application designed to help users manage their home automation systems seamlessly. The project focuses on integrating various smart devices to provide a unified control interface.
-
-## Technology Stack
-- **Frontend:** React.js, Bootstrap
-- **Backend:** Node.js, Express
-- **Database:** MongoDB
-- **Authentication:** JWT (JSON Web Tokens)
-- **Hosting:** Heroku
-
-## Routes
-- **GET /api/devices**: Fetch all devices
-- **POST /api/devices**: Add a new device
-- **PUT /api/devices/:id**: Update a device
-- **DELETE /api/devices/:id**: Remove a device
-- **GET /api/users**: Fetch user details
-- **POST /api/users/register**: User registration
-- **POST /api/users/login**: User login
-
-## Setup Instructions
-1. Clone this repository: `git clone https://github.com/BBDNIIT-CSE-PROJECT/G18-NESTIFY--MAKE-YOUR-NEST-`
-2. Navigate to the project directory: `cd G18-NESTIFY--MAKE-YOUR-NEST-`
-3. Install dependencies: `npm install`
-4. Set up environment variables in a `.env` file:
-   - `DB_URI=your_database_uri`
-   - `JWT_SECRET=your_jwt_secret`
-5. Start the application: `npm start`
-
-## Contributing
-We welcome contributions to enhance the functionality and performance of this project. Please open an issue or submit a pull request for any changes or enhancements you would like to propose.
-
----
-**Created with ❤️ by BBDNIIT-CSE-PROJECT** 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTIFY - Home Automation System</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            animation: rotate 10s linear infinite;
+        }
+        p {
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+        p:hover {
+            transform: scale(1.1);
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>NESTIFY Home Automation System</h1>
+    <p>Welcome to the NESTIFY project! Experience the future of home automation.</p>
+    <button onclick="toggleDetails()">See Project Details</button>
+    <div id="details" style="display: none;">
+        <h2>About NESTIFY</h2>
+        <p>NESTIFY is your go-to solution for a smarter home. Our home automation system allows you to control devices remotely and manage your home's energy with ease.</p>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Remote Device Control</li>
+            <li>Energy Management</li>
+            <li>Integrated Security Features</li>
+            <li>User-Friendly Interface</li>
+        </ul>
+    </div>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
